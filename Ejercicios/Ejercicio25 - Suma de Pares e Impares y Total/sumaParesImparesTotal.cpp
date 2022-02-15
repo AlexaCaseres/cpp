@@ -13,7 +13,7 @@ int main(int argc, char const *argv[])
 {
     int pares = 0, impares = 0, total = 0;
  
-    for (int i = 1; i <= 15; i++)
+    for (int i = 1; i <= 10; i++)
     {
         if ( i % 2 == 0 )
         {
