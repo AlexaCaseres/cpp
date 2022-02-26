@@ -18,12 +18,11 @@ char GetChar(int iGenerator, char cBase, int iRange) {
 }
 
 int main() {
-
 	string contrasena;
-	int agente = 0;
+   int agente = 0;
 
-	for ( agente == 1; agente <= 10; agente++)
-    {
+   for ( agente = 1; agente <= 10; agente++ )
+	{
 	cout << "Eres un agente? ingresa tu contraseña ";
 	cin >> contrasena;
 	
@@ -61,14 +60,14 @@ int main() {
 			while (i < 300000) {
 				GetChar(1, 1, 1);
 				 ++i;
-		} 
-		else {
-		cout << " \n Acceso a la matrix denegado";}
-
-			cout << " \n *** EL SISTEMA FALLO *** ";
-		
+			}
+         break;
+		}		
+	} else {
+		cout << "acceso a la matrix denegado";
 	}
-    }
 
+   cout << " \n *** EL SISTEMA FALLO ***";
+}
     return 0;
 }
