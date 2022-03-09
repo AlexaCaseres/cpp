@@ -23,6 +23,7 @@ int main() {
 
    for ( agente = 1; agente <= 10; agente++ )
 	{
+	
 	cout << "Eres un agente? ingresa tu contraseña ";
 	cin >> contrasena;
 	
@@ -61,13 +62,13 @@ int main() {
 				GetChar(1, 1, 1);
 				 ++i;
 			}
-         break;
-		}		
+	
+		}
 	} else {
 		cout << "acceso a la matrix denegado";
-	}
+        }
 
-   cout << " \n *** EL SISTEMA FALLO ***";
-}
+		cout << " \n *** EL SISTEMA FALLO ***";
+    }
     return 0;
 }
