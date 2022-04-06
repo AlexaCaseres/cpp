@@ -2,7 +2,7 @@
 
 using namespace std;
 
-extern void agregarProductos(string descripcion, int cantidad, double precio);
+extern void agregarProducto (string descripcion, int cantidad, double precio);
 
 void productos (int opcion)                                                         // Funcion Productos
 {
@@ -39,10 +39,8 @@ void productos (int opcion)                                                     
                     break;}
                 }
 
-                cout << endl;
-                cout << " Producto Agregado " << endl;
-                system ("pause");
-        break;
+                system("pause");
+                break;
         }
 
 
@@ -79,10 +77,8 @@ void productos (int opcion)                                                     
                     break;}
                 }
 
-                cout << endl;
-                cout << " Producto Agregado " << endl;
                 system("pause");
-        break;
+                break;
         }
 
 
@@ -118,11 +114,9 @@ void productos (int opcion)                                                     
 
                     break;}
                 }
-                
-                cout << endl;
-                cout << " Producto Agregado " << endl;
+  
                 system("pause");
-        break;
+                break;
         }
     }
 }

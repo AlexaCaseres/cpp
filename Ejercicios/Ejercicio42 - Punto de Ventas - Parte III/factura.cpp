@@ -14,23 +14,3 @@ void agregarProducto (string descripcion, int cantidad, double precio)          
     total = total + (subtotal + impuesto);
 }
 
-
-void imprimirFactura()                                                            // Funcion Imprimir Factura
-{
-    system ("cls");
-    cout << " -----------" << endl;
-    cout << " | FACTURA | " << endl;
-    cout << " -----------" << endl;
-
-    cout << " Productos: " << endl;
-    cout << listaProductos;
-
-    cout << endl;
-    cout << " Subtotal: " << subtotal << endl;
-
-    cout << " Impuesto del 15% " << endl;
-
-    cout << endl;
-    cout << " El total a Pagar es: " << total << endl;
-
-}
