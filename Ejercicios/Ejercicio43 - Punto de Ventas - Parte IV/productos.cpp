@@ -1,27 +1,8 @@
-/* Proposito: Calcular el subtotal, impuesto a pagar y total
-
-   Autor: Katherine Alexandra Caseres Sabillon
-   Fecha: miercoles 9 de marzo del 2022
-
-*/
-
 #include <iostream>
 
 using namespace std;
 
-
-double subtotal = 0;
-string listaProductos;
-double total = 0, impuesto = 0;
-
-void agregarProducto (string descripcion, int cantidad, double precio)              // Funcion Agregar Producto
-{
-    listaProductos = listaProductos + descripcion + "\n";
-    subtotal = subtotal + (cantidad * precio);
-    impuesto = subtotal * 0.15;
-    total = total + (subtotal + impuesto);
-}
-
+extern void agregarProducto (string descripcion, int cantidad, double precio);
 
 void productos (int opcion)                                                         // Funcion Productos
 {
@@ -58,10 +39,8 @@ void productos (int opcion)                                                     
                     break;}
                 }
 
-                cout << endl;
-                cout << " Producto Agregado " << endl;
-                system ("pause");
-        break;
+                system("pause");
+                break;
         }
 
 
@@ -98,10 +77,8 @@ void productos (int opcion)                                                     
                     break;}
                 }
 
-                cout << endl;
-                cout << " Producto Agregado " << endl;
                 system("pause");
-        break;
+                break;
         }
 
 
@@ -137,75 +114,9 @@ void productos (int opcion)                                                     
 
                     break;}
                 }
-                
-                cout << endl;
-                cout << " Producto Agregado " << endl;
+  
                 system("pause");
-        break;
+                break;
         }
     }
-}
-
-
-void imprimirFactura()                                                            // Funcion Imprimir Factura
-{
-    system ("cls");
-    cout << " -----------" << endl;
-    cout << " | FACTURA | " << endl;
-    cout << " -----------" << endl;
-
-    cout << " Productos: " << endl;
-    cout << listaProductos;
-
-    cout << endl;
-    cout << " Subtotal: " << subtotal << endl;
-
-    cout << " Impuesto del 15% " << endl;
-
-    cout << endl;
-    cout << " El total a Pagar es: " << total << endl;
-
-}
-
-
-void menu()                                                                   // Funcion Menu
-{
-    int opcion = 0;
-
-    while (true)
-    {
-        cout << " ******** " << endl;
-        cout << " * MENU * " << endl;
-        cout << " ******** " << endl;
-
-        cout << endl;
-        cout << " 1 - Bebidas Calientes " << endl;
-        cout << " 2 - Bebidas Frias " << endl;
-        cout << " 3 - Reposteria " << endl;
-        cout << " 4 - Imprimir Factura " << endl;
-        cout << " 0 - Salir " << endl;
-
-        cout << " Ingrese su opcion: ";
-        cin >> opcion;
-
-        if (opcion == 0)
-        {
-            break;
-        }
-
-        if (opcion == 4)
-        {
-            imprimirFactura();
-        } else{
-            productos(opcion);
-        }
-    }
-}
-
-
-int main(int argc, char const *argv[])
-{
-    menu();
-    
-    return 0;
 }
