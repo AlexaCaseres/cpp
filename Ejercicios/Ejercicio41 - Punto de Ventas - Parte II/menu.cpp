@@ -2,6 +2,8 @@
 
 using namespace std;
 
+extern void productos (int opcion);
+
 void menu()                                                                   // Funcion Menu
 {
     int opcion = 0;
@@ -29,11 +31,6 @@ void menu()                                                                   //
             break;
         }
 
-        if (opcion == 4)
-        {
-            imprimirFactura();
-        } else{
-            productos(opcion);
-        }
+        productos(opcion);
     }
 }
