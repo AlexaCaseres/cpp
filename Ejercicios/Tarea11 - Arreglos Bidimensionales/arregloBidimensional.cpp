@@ -28,6 +28,10 @@ int main(int argc, char const *argv[])
         {rand() % 10 + 1, rand() % 10 + 1, rand() % 10 + 1, rand() % 10 + 1, rand() % 10 + 1}
     };
 
+    cout << endl;
+    cout << " ARREGLO BIDIMENSIONAL 5x5 " << endl;
+    cout << endl;
+
     for (int v = 0; v < 5; v++)                                                  // Suma de todos los valores del arreglo bidimensional
     {
         for (int h = 0; h < 5; h++)
